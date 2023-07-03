@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+.logo img{
+    height: 70px;
+}
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    padding: 20px;
+    list-style: none;
+}
+.nav-links li a{
+    color: #3A5F89;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+.active{
+    background-color: #3A5F89;
+    color: #FFF;
+}
+
+/* ------------- main section ------------ */
+.main-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main-text h1 {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main-text p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main-text p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.applynow-btn {
+    text-decoration: none;
+    background: #3a5f89;
+    padding: 10px 31px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+
+/* ================== about page style ============== */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: auto 70px;
+}
+
+.about-left {
+    background-color: #3A5F89;
+    padding: 42px 40px;
+    /* text-align: start; */
+    color: #FFF;
+
+}
+.about-left h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.about-left p {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+
+}
+
+.about-right{
+    margin-left: 20px;
+}
+.about-right img {
+    width: 429px;
+    height: 334px;
+}
+
+
+/* service section stylesheet */
+.service{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: auto 70px;
+    height: 100vh;
+}
+.service-body {
+    /* background: red; */
+    /* padding: 10px; */
+    /* border: 1px solid #999; */
+    /* border-radius: 10px; */
+    /* box-shadow: 1px 2px 5px rgba(0,0,0,0.1); */
+}
+.service-info{
+    text-align: center;
+}
+.service-info h1{
+    padding: 20px 0;
+}
+.service-info p {
+    font-size: 20px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.btn {
+    background: #3A5F89;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 5px;
+    /* margin-top: 21px; */
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3A5F89;
+    padding: auto 70px;
+    color: #FFF;
+}
+
+.footer-left {
+    padding: 30px;
+}
+.footer-middle{
+    padding: 30px;
+}
+.footer-right{
+    padding: 30px;
+}
+.footer-left p, .footer-middle p {
+    line-height: 35px;
+}
+
+.footer-left h2 , .footer-right h2{
+    font-size: 31px;
+    margin-bottom: 10px;
+}
+.footer-right input{
+    padding: 30px;
+}
+.footer-right input {
+    padding: 10px 20px;
+    border: navajowhite;
+    outline: none;
+    font-size: 16px;
+}
+.service-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* ------------------ small device --------------- */
+@media only screen and (max-width: 700px){
+    .navbar .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links li{
+        display: inline-block;
+    }
+}
